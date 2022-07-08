@@ -1,0 +1,414 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital@1&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #a1c3ff;
+  /* max-width: 1140px; */
+  margin: 0 auto 0 auto;
+}
+
+.profile {
+  max-width: 100%;
+}
+h1,
+h2 {
+  margin-bottom: 15px;
+}
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+ul {
+  list-style: none;
+}
+.navbar {
+  background: #3474e6;
+  color: #fff;
+  height: 60px;
+}
+.navbar .logo {
+  font-size: x-large;
+  font-weight: bold;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+.navbar a:hover {
+  color: lightblue;
+}
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+}
+.nav {
+  display: flex;
+  align-items: center;
+}
+li {
+  margin: 5px;
+}
+
+.header {
+  background-color: #5599ff;
+  /* background-color: hsl(263, 55%, 52%); */
+  /* background-color: #0b0705; */
+  color: white;
+  min-width: 400px;
+}
+.header h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+.header img {
+  max-width: 400px;
+}
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.boxes .container {
+  display: flex;
+  justify-content: space-between;
+}
+.box {
+  flex: 1;
+  background: #0a51cc;
+  /* background-color: #0b0705; */
+
+  color: #fff;
+  border-radius: 10px;
+  margin: 20px 10px;
+
+  padding: 15px 20px;
+}
+.box:hover {
+  background: rgb(43, 43, 223);
+  box-shadow: 0 3px 5px rgb(43, 43, 223);
+  transform: scale(1.2);
+}
+.box i {
+  margin-right: 10px;
+}
+.main {
+  padding: 40px;
+  font-family: "Gentium Book Plus", serif;
+  /* background-color: bisque; */
+  font-weight: bold;
+}
+.main .heading {
+  border-radius: 6px;
+  background-color: #3474e6;
+  padding-left: 20px;
+  margin-right: 45px;
+  color: aliceblue;
+}
+.skill {
+  border-radius: 10px;
+  margin: 5px;
+  color: black;
+}
+.skill--header {
+  display: flex;
+  align-items: center;
+}
+.skill--header img {
+  margin: 10px;
+}
+.skill p {
+  margin: 10px;
+}
+.skills {
+  display: grid;
+  /* grid-template-areas:
+    "html html debug debug c"
+    "css matlab cpp cpp c"
+    "css js cpp cpp c"
+    "vs js python python python"
+    "vs js python python python"; */
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.skill--html {
+  /* grid-area: html; */
+  grid-column: 1/3;
+  background-color: green;
+}
+
+.skill--debug {
+  /* grid-area: debug; */
+  grid-column: 3/5;
+  background-color: rgb(68, 136, 101);
+}
+
+.skill--css {
+  /* grid-area: css; */
+  grid-row: 2/4;
+  background-color: aquamarine;
+}
+
+.skill--matlab {
+  /* grid-area: matlab; */
+  background-color: coral;
+}
+.skill--cpp {
+  /* grid-area: cpp; */
+  grid-column: 3/5;
+  grid-row: 2/4;
+  background-color: orangered;
+}
+.skill--c {
+  /* grid-area: c; */
+  grid-row: 1/4;
+  grid-column: 5/6;
+  background-color: rgb(89, 17, 206);
+}
+.skill--vscode {
+  /* grid-area: vscode; */
+  grid-row: 4/5;
+  grid-column: 1/2;
+  background-color: yellowgreen;
+}
+.skill--js {
+  /* grid-area: js ;*/
+  grid-row: 3/5;
+  grid-column: 2/3;
+  background-color: violet;
+}
+
+.skill--python {
+  /* grid-area: python; */
+  grid-row: 4/5;
+  grid-column: 3/6;
+  background-color: blueviolet;
+}
+
+@media (max-width: 768px) and (min-width: 458px) {
+  .skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .skill--html {
+    /* grid-area: html; */
+    grid-column: auto;
+    background-color: green;
+  }
+
+  .skill--debug {
+    /* grid-area: debug; */
+    grid-column: auto;
+    background-color: rgb(68, 136, 101);
+  }
+
+  .skill--css {
+    /* grid-area: css; */
+    grid-row: auto;
+    background-color: aquamarine;
+  }
+
+  .skill--matlab {
+    /* grid-area: matlab; */
+    background-color: coral;
+  }
+  .skill--cpp {
+    /* grid-area: cpp; */
+    grid-column: auto;
+    grid-row: auto;
+    background-color: orangered;
+  }
+  .skill--c {
+    /* grid-area: c; */
+    grid-row: auto;
+    grid-column: auto;
+    background-color: rgb(89, 17, 206);
+  }
+  .skill--vscode {
+    /* grid-area: vscode; */
+    grid-row: auto;
+    grid-column: auto;
+    background-color: yellowgreen;
+  }
+  .skill--js {
+    /* grid-area: js ;*/
+    grid-row: auto;
+    grid-column: auto;
+    background-color: violet;
+  }
+
+  .skill--python {
+    /* grid-area: python; */
+    grid-row: auto;
+    grid-column: auto;
+    background-color: blueviolet;
+  }
+}
+@media (max-width: 458px) {
+  .skills {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .skill--html {
+    /* grid-area: html; */
+    grid-column: auto;
+    background-color: green;
+  }
+
+  .skill--debug {
+    /* grid-area: debug; */
+    grid-column: auto;
+    background-color: rgb(68, 136, 101);
+  }
+
+  .skill--css {
+    /* grid-area: css; */
+    grid-row: auto;
+    background-color: aquamarine;
+  }
+
+  .skill--matlab {
+    /* grid-area: matlab; */
+    background-color: coral;
+  }
+  .skill--cpp {
+    /* grid-area: cpp; */
+    grid-column: auto;
+    grid-row: auto;
+    background-color: orangered;
+  }
+  .skill--c {
+    /* grid-area: c; */
+    grid-row: auto;
+    grid-column: auto;
+    background-color: rgb(89, 17, 206);
+  }
+  .skill--vscode {
+    /* grid-area: vscode; */
+    grid-row: auto;
+    grid-column: auto;
+    background-color: yellowgreen;
+  }
+  .skill--js {
+    /* grid-area: js ;*/
+    grid-row: auto;
+    grid-column: auto;
+    background-color: violet;
+  }
+
+  .skill--python {
+    /* grid-area: python; */
+    grid-row: auto;
+    grid-column: auto;
+    background-color: blueviolet;
+  }
+}
+@media (max-width: 768px) {
+  .header .container {
+    flex-direction: column;
+    padding-top: 20px;
+    text-align: center;
+  }
+  .boxes .container {
+    display: block;
+    text-align: center;
+  }
+}
+.footer {
+  margin: 0 auto;
+  background-color: #0cafff;
+  width: 100%;
+  height: 200px;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.sign {
+  font-family: "Splash", cursive;
+  padding-bottom: 20px;
+  color: white;
+}
+.container-last {
+  width: 60%;
+  height: 100px;
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.education {
+  width: 300px;
+  height: 80px;
+  background-color: #99ffff;
+  border-radius: 15px;
+  margin-left: 50px;
+  margin-top: 50px;
+  font-size: 40px;
+  color: #333;
+  text-align: left;
+  padding-top: 10px;
+  padding-left: 10px;
+
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.title1 {
+  display: flex;
+  justify-content: space-between;
+}
+.triangle1,
+.triangle2,
+.square {
+  width: 50px;
+  height: 50px;
+  /* margin-right: 200px; */
+}
+.triangle2 {
+  transform: rotate(20deg);
+}
+.triangle1 {
+  transform: rotate(-20deg);
+}
+.shapes {
+  align-self: center;
+  margin: 0 200px 0 200px;
+  width: 400px;
+  height: 120px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.square {
+  align-self: end;
+}
+.triangle2 {
+  align-self: start;
+}
+.fig:hover {
+  transform: rotate(40deg);
+}
+.education:hover {
+  box-shadow: 0 3px 5px #333;
+}
+p {
+  font-family: "Gentium Book Plus", serif;
+  font-size: 18px;
+}
